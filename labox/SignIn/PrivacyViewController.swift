@@ -20,7 +20,7 @@ class PrivacyViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setScrollView(content: contentView)
+        //setScrollView(content: contentView)
         scrollView.delegate = self
         //scrollView.contentSize.height = CGFloat(signOf: 414, magnitudeOf: 3500)
         

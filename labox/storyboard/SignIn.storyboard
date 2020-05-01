@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Whp-PG-dYU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Whp-PG-dYU">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -262,13 +262,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMz-bd-dvK">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMz-bd-dvK">
                                 <rect key="frame" x="0.0" y="56" width="414" height="786"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZhT-I7-KAJ">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZhT-I7-KAJ">
                                         <rect key="frame" x="0.0" y="0.0" width="411" height="643"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MS5-av-yTh">
                                                 <rect key="frame" x="36" y="0.0" width="342" height="3779"/>
@@ -363,12 +361,19 @@ e. その他，開発者が本サービスの利用を適当でないと判断�
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZhT-I7-KAJ" secondAttribute="trailing" constant="3" id="1ga-pJ-j3c"/>
+                                    <constraint firstItem="ZhT-I7-KAJ" firstAttribute="leading" secondItem="01C-Ff-FEj" secondAttribute="leading" id="D1w-Jj-X2K"/>
+                                    <constraint firstItem="01C-Ff-FEj" firstAttribute="trailing" secondItem="ZhT-I7-KAJ" secondAttribute="trailing" constant="3" id="brf-lG-VpJ"/>
+                                    <constraint firstItem="01C-Ff-FEj" firstAttribute="bottom" secondItem="ZhT-I7-KAJ" secondAttribute="bottom" constant="143" id="hOe-SI-Kfl"/>
+                                    <constraint firstItem="ZhT-I7-KAJ" firstAttribute="top" secondItem="6YV-qq-wMe" secondAttribute="top" id="ly1-He-Fx5"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZhT-I7-KAJ" secondAttribute="bottom" constant="143" id="wkc-AP-r8b"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="6YV-qq-wMe"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="01C-Ff-FEj"/>
                             </scrollView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eph-J4-t6x">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eph-J4-t6x">
                                 <rect key="frame" x="0.0" y="696" width="414" height="146"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJa-2s-sbZ">
                                         <rect key="frame" x="157" y="35" width="100" height="30"/>
@@ -386,6 +391,16 @@ e. その他，開発者が本サービスの利用を適当でないと判断�
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lMz-bd-dvK" firstAttribute="trailing" secondItem="eph-J4-t6x" secondAttribute="trailing" id="6T1-YN-ghF"/>
+                            <constraint firstItem="lMz-bd-dvK" firstAttribute="centerX" secondItem="qVE-KS-ID1" secondAttribute="centerX" id="Eit-oc-8ty"/>
+                            <constraint firstItem="eph-J4-t6x" firstAttribute="top" secondItem="v5B-v0-MqW" secondAttribute="top" constant="640" id="Ejb-bJ-tlF"/>
+                            <constraint firstItem="lMz-bd-dvK" firstAttribute="leading" secondItem="v5B-v0-MqW" secondAttribute="leading" id="S4e-MG-GdB"/>
+                            <constraint firstItem="lMz-bd-dvK" firstAttribute="top" secondItem="v5B-v0-MqW" secondAttribute="top" id="nLV-66-nRF"/>
+                            <constraint firstItem="lMz-bd-dvK" firstAttribute="leading" secondItem="eph-J4-t6x" secondAttribute="leading" id="owT-6m-lTE"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lMz-bd-dvK" secondAttribute="bottom" constant="-34" id="t5C-4w-tSg"/>
+                            <constraint firstItem="lMz-bd-dvK" firstAttribute="bottom" secondItem="eph-J4-t6x" secondAttribute="bottom" id="ub8-28-Asz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="v5B-v0-MqW"/>
                     </view>
                     <navigationItem key="navigationItem" title="利用規約" id="COf-KR-mKa"/>
@@ -644,12 +659,12 @@ e. その他，開発者が本サービスの利用を適当でないと判断�
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="名前" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q4F-mk-9Qr">
-                                <rect key="frame" x="65" y="198" width="298" height="19"/>
+                                <rect key="frame" x="65" y="198.33333333333334" width="298" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fs4-hH-86S">
-                                <rect key="frame" x="59" y="219" width="304" height="2"/>
+                                <rect key="frame" x="59" y="217.33333333333334" width="304" height="3.6666666666666572"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="電話またはメールアドレス" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9U4-Z9-w5L">
@@ -794,13 +809,11 @@ e. その他，開発者が本サービスの利用を適当でないと判断�
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uou-ho-4gh">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uou-ho-4gh">
                                 <rect key="frame" x="0.0" y="56" width="414" height="654"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aGE-6h-fzt">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGE-6h-fzt">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="651"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bYd-V4-fYg">
                                                 <rect key="frame" x="36" y="21" width="344" height="3801"/>
@@ -859,12 +872,19 @@ e. その他，開発者が本サービスの利用を適当でないと判断�
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="aGE-6h-fzt" firstAttribute="centerX" secondItem="uou-ho-4gh" secondAttribute="centerX" id="6cE-vv-tyZ"/>
+                                    <constraint firstItem="aGE-6h-fzt" firstAttribute="leading" secondItem="xTf-Bn-cpy" secondAttribute="leading" id="IXL-Zc-TM4"/>
+                                    <constraint firstItem="aGE-6h-fzt" firstAttribute="top" secondItem="3qw-Ol-e37" secondAttribute="top" id="Rhy-17-Hd8"/>
+                                    <constraint firstItem="xTf-Bn-cpy" firstAttribute="bottom" secondItem="aGE-6h-fzt" secondAttribute="bottom" constant="3" id="dII-Ss-szr"/>
+                                    <constraint firstAttribute="trailing" secondItem="aGE-6h-fzt" secondAttribute="trailing" id="hlG-cT-qAc"/>
+                                    <constraint firstAttribute="bottom" secondItem="aGE-6h-fzt" secondAttribute="bottom" constant="3" id="sUA-rP-rQu"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="3qw-Ol-e37"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="xTf-Bn-cpy"/>
                             </scrollView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VOQ-gs-83s">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOQ-gs-83s">
                                 <rect key="frame" x="0.0" y="718" width="414" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnc-Ah-0Za">
                                         <rect key="frame" x="157" y="8" width="100" height="30"/>
@@ -882,6 +902,16 @@ e. その他，開発者が本サービスの利用を適当でないと判断�
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uou-ho-4gh" secondAttribute="bottom" constant="132" id="1U4-i2-M66"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="VOQ-gs-83s" secondAttribute="bottom" constant="-34" id="1YF-aG-Tfl"/>
+                            <constraint firstItem="uou-ho-4gh" firstAttribute="leading" secondItem="VOQ-gs-83s" secondAttribute="leading" id="2c7-X1-JN6"/>
+                            <constraint firstItem="uou-ho-4gh" firstAttribute="top" secondItem="yJe-FF-r5D" secondAttribute="top" id="3jr-Be-c5K"/>
+                            <constraint firstItem="VOQ-gs-83s" firstAttribute="top" secondItem="uou-ho-4gh" secondAttribute="bottom" constant="8" id="6ZZ-A7-Kdc"/>
+                            <constraint firstItem="uou-ho-4gh" firstAttribute="leading" secondItem="yJe-FF-r5D" secondAttribute="leading" id="9MC-Ff-fau"/>
+                            <constraint firstItem="uou-ho-4gh" firstAttribute="centerX" secondItem="DMD-2p-a9h" secondAttribute="centerX" id="9hf-Fb-X9F"/>
+                            <constraint firstItem="uou-ho-4gh" firstAttribute="trailing" secondItem="VOQ-gs-83s" secondAttribute="trailing" id="k70-y4-55o"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yJe-FF-r5D"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
